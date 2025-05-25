@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Background map area -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M4,44 L44,44 L44,4 L4,4 Z" />
+
+    <!-- Map grid - horizontal lines -->
+    <path
+        android:strokeColor="#BBDEFB"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M4,16 L44,16 M4,32 L44,32" />
+
+    <!-- Map grid - vertical lines -->
+    <path
+        android:strokeColor="#BBDEFB"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M16,4 L16,44 M32,4 L32,44" />
+
+    <!-- Location pin shadow -->
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M24,13
+            c-5,0 -9,4 -9,9
+            0,6.6 9,17 9,17
+            s9,-10.4 9,-17
+            c0,-5 -4,-9 -9,-9z" />
+
+    <!-- Pin inner circle (as path) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,22 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

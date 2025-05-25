@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627303080400",
+    "project_id": "yassine-cc85b",
+    "storage_bucket": "yassine-cc85b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627303080400:android:6760d632b8135504fb59d5",
+        "android_client_info": {
+          "package_name": "com.example.profattendaceemsi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGTwhOSn87FBUCzMGnIkh-OwhYBl_JMcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
