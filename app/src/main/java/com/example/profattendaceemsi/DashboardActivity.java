@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,7 +25,7 @@ public class DashboardActivity extends AppCompatActivity {
         if (profName != null && !profName.isEmpty()) {
             welcomeText.setText("Welcome, Prof. " + profName + "!");
         } else {
-            welcomeText.setText("Professor Name Not Available");
+            welcomeText.setText("Professor Name ");
         }
 
 
@@ -38,6 +39,11 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+        });
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) LinearLayout mapSection = findViewById(R.id.mapSection);
+        mapSection.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, MapsActivity.class);
+            startActivity(intent);
         });
     }
 }

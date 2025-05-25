@@ -49,12 +49,13 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation(libs.gridlayout)
     implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.firebase:firebase-analytics")
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
     implementation("com.google.firebase:firebase-storage:20.3.0")
-    implementation ("com.google.android.gms:play-services-maps:18.1.0")
-
+    implementation (libs.play.services.maps.v1810)
+    implementation (libs.play.services.location.v2110)
 }

@@ -11,8 +11,11 @@ googleServices = "4.4.2"
 firebaseBom = "33.10.0"
 firebaseFirestore = "25.1.2"
 gridlayout = "1.1.0"
+playServicesLocationVersion = "21.1.0"
 playServicesMaps = "19.2.0"
 googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
+playServicesLocation = "21.3.0"
+playServicesMapsVersion = "18.1.0"
 
 
 
@@ -28,7 +31,10 @@ firebaseAnalytics = { group = "com.google.firebase", name = "firebase-analytics"
 firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 gridlayout = { group = "androidx.gridlayout", name = "gridlayout", version.ref = "gridlayout" }
-play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" } # Add this line
+play-services-location-v2110 = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocationVersion" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" } # Add this line
+play-services-maps-v1810 = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMapsVersion" }
 
 
 [plugins]
