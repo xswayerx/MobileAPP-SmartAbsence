@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -40,9 +41,25 @@ public class DashboardActivity extends AppCompatActivity {
                 finish();
             }
         });
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) LinearLayout mapSection = findViewById(R.id.mapSection);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress", "WrongCast", "WrongViewCast"})
+        LinearLayout mapSection = findViewById(R.id.mapSection);
         mapSection.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, MapsActivity.class);
+            startActivity(intent);
+        });
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) LinearLayout assistantTitle = findViewById(R.id.assistant_virtual);
+        assistantTitle.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, Assistant_virtuelActivity.class);
+            startActivity(intent);
+        });
+        CardView emploiSection = findViewById(R.id.history);
+        emploiSection.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, EmploiDuTempsActivity.class);
+            startActivity(intent);
+        });
+        CardView absence = findViewById(R.id.card4);
+        absence.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, MarkAbsenceActivity.class);
             startActivity(intent);
         });
     }

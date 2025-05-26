@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ProfAttendaceEmsi</string>
     <string name="Welcome">Welcome Mr/Mme</string>
+    <string name="assistant_title">Assistant Title</string>
+    <string name="zone_de_discussion_faites_d_filer_pour_voir_les_messages">Zone de discussion, faites défiler pour voir les messages</string>
 
 </resources>
 

@@ -58,4 +58,9 @@ dependencies {
     implementation("com.google.firebase:firebase-storage:20.3.0")
     implementation (libs.play.services.maps.v1810)
     implementation (libs.play.services.location.v2110)
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation("com.squareup.moshi:moshi:1.15.1")
+    implementation("com.squareup.moshi:moshi-adapters:1.15.1")
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
 }
