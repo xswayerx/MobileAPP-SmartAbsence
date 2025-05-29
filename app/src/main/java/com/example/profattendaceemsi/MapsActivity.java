@@ -49,6 +49,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Marker emsiMarker = mMap.addMarker(new MarkerOptions()
                 .position(emsi)
                 .title("Marqueur à emsi centre"));
+        LatLng emsiCentre = new LatLng(33.58931956959172, -7.605327086230895);
+        Marker markerCentre = mMap.addMarker(new MarkerOptions().position(emsiCentre).title("Marqueur à EMSI Centre"));
+        markerCentre.setTag("centre");
+
+        LatLng emsiMaarif = new LatLng(33.582504, -7.628001);
+        Marker markerMaarif = mMap.addMarker(new MarkerOptions().position(emsiMaarif).title("Marqueur à EMSI Maârif"));
+        markerMaarif.setTag("maarif");
+
+        LatLng emsiRoudani = new LatLng(33.579896, -7.634926);
+        Marker markerRoudani = mMap.addMarker(new MarkerOptions().position(emsiRoudani).title("Marqueur à EMSI Roudani"));
+        markerRoudani.setTag("roudani");
+
+        LatLng emsiLesOranges = new LatLng(33.573135, -7.589389);
+        Marker markerLesOranges = mMap.addMarker(new MarkerOptions().position(emsiLesOranges).title("Marqueur à EMSI Les Oranges"));
+        markerLesOranges.setTag("les_oranges");
+
+        LatLng emsiMoulayYoussef = new LatLng(33.587408, -7.611464);
+        Marker markerMoulay = mMap.addMarker(new MarkerOptions().position(emsiMoulayYoussef).title("Marqueur à EMSI Moulay Youssef"));
+        markerMoulay.setTag("moulay");
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(emsi, 10));
         if (emsiMarker != null) emsiMarker.setTag("destination");
 
